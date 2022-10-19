@@ -1,0 +1,6 @@
+name: TheSimpleEconomy
+version: '${project.version}'
+main: me.playajames.thesimpleeconomy.TheSimpleEconomy
+api-version: 1.19
+authors: [ playajames ]
+description: Simple lightweight economy plugin for minecraft servers.
