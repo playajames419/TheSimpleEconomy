@@ -3,9 +3,13 @@ package me.playajames.thesimpleeconomy;
 import dev.jorel.commandapi.CommandAPI;
 import dev.jorel.commandapi.CommandAPIConfig;
 import me.playajames.thesimpleeconomy.commands.BalanceCommand;
+import me.playajames.thesimpleeconomy.commands.GiveMoneyCommand;
+import me.playajames.thesimpleeconomy.commands.PayMoneyCommand;
+import me.playajames.thesimpleeconomy.commands.SetMoneyCommand;
 import me.playajames.thesimpleeconomy.listeners.PlayerJoinListener;
 import me.playajames.thesimpleeconomy.utilities.DatabaseUtil;
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class TheSimpleEconomy extends JavaPlugin {
@@ -35,7 +39,7 @@ public final class TheSimpleEconomy extends JavaPlugin {
 
     private void setConfigValues() {
         STARTING_BALANCE = getConfig().getDouble("starting-balance");
-        PREFIX = getConfig().getString("prefix");
+        PREFIX = ChatColor.translateAlternateColorCodes('&', getConfig().getString("prefix"));
     }
 
     private void registerListeners() {
@@ -44,6 +48,9 @@ public final class TheSimpleEconomy extends JavaPlugin {
 
     private void registerCommands() {
         CommandAPI.registerCommand(BalanceCommand.class);
+        CommandAPI.registerCommand(GiveMoneyCommand.class);
+        CommandAPI.registerCommand(PayMoneyCommand.class);
+        CommandAPI.registerCommand(SetMoneyCommand.class);
     }
 
 }
