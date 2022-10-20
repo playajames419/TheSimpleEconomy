@@ -1,6 +1,4 @@
-[![CodeFactor](https://www.codefactor.io/repository/github/playajames419/thesimpleeconomy/badge)](https://www.codefactor.io/repository/github/playajames419/thesimpleeconomy)
-
-## What is it?
+## What is it? [![CodeFactor](https://www.codefactor.io/repository/github/playajames419/thesimpleeconomy/badge)](https://www.codefactor.io/repository/github/playajames419/thesimpleeconomy)
 
 Simple lightweight economy plugin for minecraft servers.
 
